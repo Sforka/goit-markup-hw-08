@@ -1,0 +1,39 @@
+.feature {
+    background-color: var(--color-background-white);
+}
+
+.feature__list {
+    display: flex;
+    gap: 30px;
+}
+
+.feature__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+
+    background-color: var(--color-background-team);
+}
+
+.feature__title {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-title-text);
+}
+
+.feature__text {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: var(--color-main-text);
+}

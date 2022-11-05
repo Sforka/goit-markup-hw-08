@@ -1,0 +1,204 @@
+.footer {
+    display: block;
+    background: var(--color-background-footer);
+    font-style: normal;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.address__container {
+    margin-right: 70px;
+}
+
+.logo-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+
+    color: var(--color-white-text);
+}
+
+.address__item {
+    margin-bottom: 9px;
+}
+
+.address__item:last-child {
+    margin-bottom: 0px;
+}
+
+.address__map {
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: var(--color-white-text);
+}
+
+.address__mail {
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address__tel {
+    font-size: 14px;
+    line-height: 1.71;
+
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.socials__footer {
+    margin-right: auto;
+}
+
+.socials__text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-white-text);
+}
+
+.socials__list-footer {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+}
+
+.socials__link-footer {
+    transition: color var(--animation-delay), background-color var(--animation-delay);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--colo-icon-background-footer);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-active-link);
+    }
+}
+
+.socials__icon-footer {
+    transition: fill var(--animation-delay);
+    fill: var(--color-white-text);
+
+    .socials__link &,
+    .socials__link & {
+        fill: var(--color-white-text);
+    }
+}
+
+.email__title {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--color-white-text);
+}
+
+.email__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.email__box input {
+    width: 350px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 16px;
+
+    background-color: transparent;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: var(--color-white-text);
+    outline: transparent;
+
+    transition: border var(--animation-delay), outline var(--animation-delay);
+
+    &:focus,
+    &:hover {
+        border: 1px solid var(--color-active-link);
+        outline: 2px solid var(--color-active-link);
+    }
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+
+        align-items: center;
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.email__button {
+    width: 200px;
+    height: 50px;
+
+    background: var(--color-active-link);
+    border: 1px solid var(--color-active-link);
+    border-radius: 4px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    letter-spacing: 0.06em;
+
+    color: var(--color-white-text);
+    cursor: pointer;
+
+    transition: background-color var(--animation-delay), box-shadow var(--animation-delay);
+
+    &:hover,
+    &:focus {
+        background-color: var(--color-active-button);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}
+
+.button__icon {
+    margin-left: 10px;
+    fill: var(--color-white-text);
+}
