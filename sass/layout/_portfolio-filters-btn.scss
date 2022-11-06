@@ -1,9 +1,17 @@
 .filters-list {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 50px;
-    gap: 8px;
+    gap: 15px 8px;
+    margin-right: 20px;
+    @include tablet {
+    margin-right: 0px;
+    justify-content: center;
+    }
+   
+
 }
 
 .filters-button {

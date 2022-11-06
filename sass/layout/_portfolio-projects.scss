@@ -5,8 +5,14 @@
 }
 
 .projects-item {
-  width: calc((100% - 60px) / 3);
+  width: 100%;
   background-color: var(--color-background-white);
+  @include tablet {
+    width: calc((100% - 30px) / 2);
+  }
+  @include desktop {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
 .projects-link {
