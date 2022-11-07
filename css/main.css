@@ -1359,7 +1359,7 @@ textarea:hover, textarea:focus {
 }
 
 .email__box input {
-  width: 450px;
+  width: calc(100vw - 30px);
   height: 50px;
   margin-bottom: 20px;
   padding: 16px;
@@ -1428,6 +1428,11 @@ textarea:hover, textarea:focus {
           align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (min-width: 768px) {
+  .email__box input {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .email__box input {
