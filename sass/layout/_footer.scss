@@ -128,6 +128,7 @@
 
 .socials__list-footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
     gap: 10px;
 }
@@ -230,7 +231,9 @@
 
         color: rgba(255, 255, 255, 0.6);
     }
-
+    @include mobile {
+        width: 450px;
+    }
     @include tablet {
         width: 450px;
     }
