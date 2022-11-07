@@ -1433,6 +1433,7 @@ textarea:hover, textarea:focus {
 }
 @media screen and (min-width: 480px) {
   .email__box input {
+    background-color: red;
     width: 450px;
   }
 }
