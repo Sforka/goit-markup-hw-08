@@ -330,13 +330,21 @@ img {
 
 .menu {
   position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   background-color: aliceblue;
   top: 0;
   width: 100vw;
-  height: 100vh;
-  padding-top: 48px;
-  padding-bottom: 48px;
-  padding-left: 40px;
+  height: 100%;
+  padding: 48px 40px;
   z-index: 1;
 }
 
@@ -356,14 +364,11 @@ img {
   fill: var(--color-active-link);
 }
 
-.mobile-nav__list {
-  margin-bottom: 302px;
-}
 .mobile-nav__list .current {
   color: var(--color-active-link);
 }
 
-.mobile-nav__item:not(:last-child) {
+.mobile-nav__item {
   margin-bottom: 32px;
 }
 
@@ -413,6 +418,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 10px;
 }
 

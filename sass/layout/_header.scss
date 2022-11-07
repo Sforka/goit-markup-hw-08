@@ -163,13 +163,14 @@
 
 .menu {
     position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: aliceblue;
     top: 0;
     width: 100vw;
-    height: 100vh;
-    padding-top: 48px;
-    padding-bottom: 48px;
-    padding-left: 40px;
+    height: 100%;
+    padding: 48px 40px;
     z-index: 1;
 }
 
@@ -193,16 +194,14 @@
 }
 
 .mobile-nav__list {
-    margin-bottom: 302px;
     & .current {
         color: var(--color-active-link);
     }
 }
 
 .mobile-nav__item {
-    &:not(:last-child) {
-        margin-bottom: 32px;
-    }
+ margin-bottom: 32px;
+    
 }
 
 .mobile-nav__link {
@@ -254,6 +253,7 @@
 
 .mobile-socials__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 .mobile-socials__link {
