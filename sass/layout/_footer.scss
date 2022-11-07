@@ -234,9 +234,6 @@
     @include mobile {
         width: 450px;
     }
-    @include tablet {
-        width: 450px;
-    }
     @include desktop {
         margin-right: 12px;
         width: 358px;

@@ -1436,11 +1436,6 @@ textarea:hover, textarea:focus {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) {
-  .email__box input {
-    width: 450px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .email__box input {
     margin-right: 12px;
