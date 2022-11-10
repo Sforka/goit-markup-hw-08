@@ -8,7 +8,7 @@
 }
 
 .modal {
-    width: 450px;
+    width: calc(100vw - 30px);
     min-height: 609px;
     padding: 40px;
     background-color: var(--color-background-white);
@@ -22,6 +22,9 @@
     & input,
     & textarea {
         outline: 2px solid transparent;
+    }
+    @include tablet {
+        width: 450px;
     }
     @include desktop {
         width: 528px;
@@ -185,11 +188,14 @@ textarea {
 }
 
 .aggreement__icon-check {
-    display: inline-block;
+    position: relative;
     width: 16px;
     height: 15px;
+    
+    
 
     background-image: url(../image/icon-check.svg);
+    background-repeat: no-repeat;
     background-origin: border-box;
     border: 2px solid var(--color-black-text);
 

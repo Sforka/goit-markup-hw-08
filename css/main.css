@@ -511,8 +511,6 @@ img {
 
 .hero__title {
   margin-bottom: 30px;
-  width: 360px;
-  height: 84px;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.61;
@@ -767,6 +765,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -805,11 +805,17 @@ img {
 .customer__title {
   margin-bottom: 50px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--color-black-text);
+}
+@media screen and (min-width: 1200px) {
+  .customer__title {
+    font-size: 36px;
+    line-height: 42px;
+  }
 }
 
 .customers {
@@ -830,6 +836,20 @@ img {
   transition: color var(--animation-delay), fill var(--animation-delay);
 }
 
+.customers__item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .customers__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    width: 170px;
+  }
+}
+
 .customers__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,7 +860,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
+  width: 100%;
   height: 92px;
   border: 1px solid var(--color-icon-grey);
   border-radius: 4px;
@@ -850,16 +870,6 @@ img {
 }
 .customers__link:hover .customers__icon, .customers__link:hover .customers__icon, .customers__link:focus .customers__icon, .customers__link:focus .customers__icon {
   fill: var(--color-active-link);
-}
-@media screen and (min-width: 768px) {
-  .customers__link {
-    width: 226px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .customers__link {
-    width: 170px;
-  }
 }
 
 .backdrop {
@@ -873,7 +883,7 @@ img {
 }
 
 .modal {
-  width: 450px;
+  width: calc(100vw - 30px);
   min-height: 609px;
   padding: 40px;
   background-color: var(--color-background-white);
@@ -891,6 +901,11 @@ img {
 }
 .modal input, .modal textarea {
   outline: 2px solid transparent;
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    width: 450px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .modal {
@@ -1090,10 +1105,11 @@ textarea:hover, textarea:focus {
 }
 
 .aggreement__icon-check {
-  display: inline-block;
+  position: relative;
   width: 16px;
   height: 15px;
   background-image: url(../image/icon-check.svg);
+  background-repeat: no-repeat;
   background-origin: border-box;
   border: 2px solid var(--color-black-text);
 }
@@ -1341,6 +1357,7 @@ textarea:hover, textarea:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 @media screen and (min-width: 1200px) {
   .footer-email-container {
