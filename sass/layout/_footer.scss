@@ -11,9 +11,12 @@
     align-items: center;
     justify-content: center;
 
+    @include tablet {
+        align-items: baseline;
+    }
+
     @include desktop {
         justify-content: space-between;
-        align-items: baseline;
     }
 }
 

@@ -518,6 +518,11 @@ img {
   text-transform: uppercase;
   color: var(--color-white-text);
 }
+@media screen and (min-width: 768px) {
+  .hero__title {
+    width: 360px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero__title {
     margin-bottom: 30px;
@@ -1168,14 +1173,18 @@ textarea:hover, textarea:focus {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) {
+  .footer__container-list {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__container-list {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
   }
 }
 

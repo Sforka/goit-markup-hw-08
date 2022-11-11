@@ -61,7 +61,9 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--color-white-text);
-
+@include tablet{
+    width: 360px;
+}
     @include desktop {
         margin-bottom: 30px;
         width: 696px;
